@@ -7,41 +7,40 @@
 }
 body {
 	font-family: 'Roboto', sans-serif;
-	/*background-color: #201f1d;*/
-	/*background-image: url(../default/background.jpg);*/
-	background: #333333;
+	background: #606060;
 }
 p {
-	color: #fff;
 	font-size: 1em;
 	margin: 0;
 	padding: 0;
 	line-height: 1.5em;
 }
 /*Navigation + header*/
-
-header {
+#project, #about, #contact {
+		color: #fff;
+}	
+#header {
 	align-items: center;
-	display: flex;
 	flex-direction: row;
-	height: 7rem;
-	padding: 10px 15px;
 	position: fixed;
 	width: 100%;
+	overflow: hidden;
+	top: 9%;
 }
-ul {
+nav ul {
 	position: absolute;
-	top: 25%;
+	top: 65%;
 	left: 55%;
 	display: flex;
 	margin: 0;
 	padding: 0;
 }
-ul li {
+
+nav ul li {
 	list-style: none;
 	padding: 15px;
 }
-ul li a {
+nav ul li a {
 	position: relative;
 	text-align: center;
 	color: #FFFFFF;
@@ -51,11 +50,11 @@ ul li a {
 	transition: 0.5s;
 	padding: 5px 25px;
 }
-ul li a:hover {
+nav ul li a:hover {
 	color: #fff;
 	background: #ff9523;
 }
-ul li a:before {
+nav ul li a:before {
 	content: '';
 	position: absolute;
 	bottom: 4px;
@@ -67,12 +66,12 @@ ul li a:before {
 	transition: 0.5s;
 	opacity: 0;
 }
-ul li a:hover:before {
+nav ul li a:hover:before {
 	bottom: -6px;
 	left: -6px;
 	opacity: 1;
 }
-ul li a:after {
+nav ul li a:after {
 	content: '';
 	position: absolute;
 	top: 2px;
@@ -84,7 +83,7 @@ ul li a:after {
 	transition: 0.5s;
 	opacity: 0;
 }
-ul li a:hover:after {
+nav ul li a:hover:after {
 	top: -6px;
 	right: -6px;
 	opacity: 1;
@@ -101,7 +100,7 @@ ul li a:hover:after {
 	transform: skew(0deg, 10deg);
 }
 .skewedBox {
-	background-color: #111111;
+	background-color: #3c3c3c;
 	padding: 100px 0;
 	transform: skew(0deg, -10deg)translateY(-170px);
 }
@@ -112,13 +111,14 @@ ul li a:hover:after {
 	font-size: 3em;
 	position: absolute;
 	top: 40%;
-	left:45%;
+	left: 44%;
 }
 .container p {
 	width: 60%;
 	position: absolute;
 	top: 50%;
-	left:19%;
+	left: 19%;
+	color: #fff;
 }
 /*----Projects----*/
 .container_projects {
@@ -146,8 +146,9 @@ ul li a:hover:after {
 	width: 60%;
 	position: absolute;
 	top: 130%;
+	color: #fff;
 }
-/*----Media----*/
+/*----About----*/
 .container_about {
 	display: flex;
 	width: 100%;
@@ -159,7 +160,7 @@ ul li a:hover:after {
 	transform: skew(0deg, 10deg);
 }
 .skewedBox2 {
-	background: #555555;
+	background: #818181;
 	padding: 100px 0;
 	transform: skew(0deg, -10deg)translateY(-170px);
 }
@@ -168,19 +169,20 @@ ul li a:hover:after {
 	margin: 0;
 	font-size: 3em;
 	position: absolute;
-	left: 45%;
+	left: 46%;
 }
 .skewedBox2 p {
 	width: 60%;
 	position: absolute;
 	top: 25%;
-	left:19%;	
+	left: 19%;
+	color: #fff;
 }
-/*----Blog----*/
-.container_media {
+/*---Contact---*/
+.container_contact {
 	display: flex;
 	width: 100%;
-	height: 900px;
+	height: 50px;
 	flex-wrap: wrap;
 	margin-left: auto;
 	margin-right: auto;
@@ -188,41 +190,50 @@ ul li a:hover:after {
 	transform: skew(0deg, 10deg);
 }
 .skewedBox3 {
-	background: #777777;
+	background: #606060;
 	padding: 100px 0;
 	transform: skew(0deg, -10deg)translateY(-170px);
+}
+.skewedBox3 h1 {
+	color: #fff;
+	margin: 0;
+	font-size: 3em;
+	position: absolute;
+	left: 46%;
+	top: 10%;
+}
+.skewedBox3 p {
+	width: 60%;
+	position: absolute;
+	top: 55%;
+	left: 19%;
+	color: #fff;
 }
 
-/*----About----*/
-.container_blog {
-	display: flex;
+footer {
+	position: absolute;
+	height: 231px;
 	width: 100%;
-	height: 900px;
-	flex-wrap: wrap;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 150px 100px;
-	transform: skew(0deg, 10deg);
+	top: 400%;
 }
-.skewedBox4 {
-	background: #A3A3A3;
-	padding: 100px 0;
-	transform: skew(0deg, -10deg)translateY(-170px);
-}
-/*----Contact----*/
-.container_contact {
-	display: flex;
-	width: 100%;
-	height: 900px;
-	flex-wrap: wrap;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 150px 100px;
-	transform: skew(0deg, 10deg);
-}
-.skewedBox5 {
-	background: #A6A6A6;
-	padding: 100px 0;
-	transform: skew(0deg, -10deg)translateY(-170px);
+.footer_text h2 {
+	color: #fff;
+	margin: 0;
+	position: absolute;
+	left: 46.5%;
 }
 
+.footerbox ul {
+	position: absolute;
+	top: 10%;
+	left: 36.5%;
+	margin: 20px;
+	padding: 20px;
+}
+.footerbox li {
+	display: inline;
+}
+.footerbox ul li {
+	list-style: none;
+	padding: 20px;
+}
